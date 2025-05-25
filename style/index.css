@@ -18,6 +18,5 @@ aside img {border-radius: 50%;}
     article h2{font-size: 3rem;}
 }
 .links-contato{display: flex;justify-content: center;width: 100%;margin-top: 4rem;flex-wrap: wrap;}
-.btn{display: inline-block;padding: 1rem 2rem;border-radius: 2px;}
-.detalhes {font-size: 2.4rem;color: var(--cinza);transition: background 0.3s ease-out;}
-.detalhes:hover {background: var(--azul-10);color: var(--branco);}
+.btn-detalhes {font-size: 2.4rem;color: var(--cinza);transition: background 0.3s ease-out;}
+.btn-detalhes:hover {background: var(--azul-10);color: var(--branco);}

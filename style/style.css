@@ -1,0 +1,78 @@
+:root { /*Gerado em : https://www.radix-ui.com/colors/custom | Accent:--azul | Gray: --cinza | Background: --branco */
+    --branco: #f0f0f0;
+    --azul: #1b316b;
+    --cinza: #333333;
+
+    --azul-1:#EBEDEF;
+    --azul-2: #E4E8EF;
+    --cinza-1: #ECECEC;
+    --cinza-2: #E8E8E8;
+
+    --azul-3:#D8DFEE;
+    --azul-4: #CAD7F2;
+    --azul-5: #B9CCF3;
+    --cinza-3: #DEDEDE;
+    --cinza-4: #D5D5D5;
+    --cinza-5: #CCC;
+
+    --azul-6: #A6BDEE;
+    --azul-7: #8DAAE8;
+    --azul-8:#6C90E4;
+    --cinza-6: #C4C4C4;
+    --cinza-7: #B8B8B8;
+    --cinza-8: #A5A5A5;
+
+    --azul-9: #1B316B;
+    --azul-10: #2C4480;
+    --cinza-9: #777;
+    --cinza-10: #6D6D6D;
+
+    --azul-11: #3B5BAA;
+    --azul-12: #192F69;
+    --cinza-11: #505050;
+    --cinza-12: #202020;
+}
+*{margin: 0;padding: 0;}
+*,*::before,*::after {box-sizing: inherit;}
+#apresentacao,#curriculo,#contato {scroll-margin-top: 80px;}
+html{box-sizing: border-box;font-size: 62.5%;scroll-behavior: smooth;}
+@media (max-width: 75em) {html {font-size: 60%;}}
+@media (max-width: 61.25em) {html {font-size: 58%;}}
+@media (max-width: 28.75em) {html {font-size: 55%;}}
+body{font-size: 1.8rem;font-weight: 400;line-height: 1.4;}
+h1,h2{font-family: 'Raleway', sans-serif;font-weight: 700;color: #192F69 !important;}
+h1.title{font-size: 6rem;}
+h2.title{font-size: 4.2rem;}
+ul{list-style: none;}
+p {font-size: 16px;}
+a{text-decoration: none !important;color: var(--branco);}
+img{display: block;width: 100%;}
+.bg-azul {background: var(--azul);}
+.bg-azul-2 {background: var(--azul-2);}
+
+/* MENU */
+header .nav-link {font-size: 16px; padding: .5rem 1.5rem !important; margin-left: 1rem; color: #fff; text-transform: uppercase;}
+header .nav-link::after {content: ''; width: 0%; height: 3px; background-color: #fff; display: block; transition: .3s;}
+header .nav-link:hover::after {width: 100%;}
+@media screen and (min-width: 768px) {header .nav-link:hover::after {width: 10%;}}
+header .nav-link:hover {color: #fff;}
+
+/* BANNER */
+.container-banner {height: 100vh; background: var(--azul-2);}
+.sub-title {color: #000; font-size: 16px; text-transform:uppercase; letter-spacing: 1.6px; font-weight: 600; }
+.thumb {border-radius: 50%;}
+/* PROJETOS */
+.projeto-nome {text-align: center; background: var(--azul); color: #FFF; font-size: 24px; padding:1rem 0; transition: .3s;}
+.projeto-nome:hover {color:var(--cinza-10);}
+
+/* FORMAÇÃO */
+.card__custom {border: 2px var(--azul-8) solid;border-radius: 10px;padding: 1rem;margin: 20px auto;width: 60%;box-shadow: rgba(69, 86, 125, 0.15) 5px 5px 6px;}
+.icon{width: 10rem;height: 10rem;border-radius: 50%;margin: 1rem;}
+.instituicao{font-size: 20px;font-weight: bold;}
+.funcao{font-weight: lighter;text-align: justify;}
+.tempo {font-size: smaller;font-style: italic;font-weight: lighter;}
+
+/* CONTATO */
+.btn__branco {font-size: 2.4rem;color: var(--cinza);transition: .3s; padding: 1rem 2rem; border-radius: 10px;}
+.btn__branco:hover {background: var(--azul-10);color: var(--branco);}
+.container__contato {background: var(--azul-2); height: 100vh;}
