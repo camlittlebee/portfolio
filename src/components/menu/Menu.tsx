@@ -2,12 +2,24 @@ import * as React from "react";
 import {
   AppBar, Box, Container, Drawer, IconButton,
   Toolbar, List, ListItem,
-  ListItemButton, ListItemText
+  ListItemButton, ListItemText, Avatar, Stack,
+  Button
 } from "@mui/material";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import Contato from '../../data/contato.json';
 import MenuItens from '../../data/menu.json';
+
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import EmailIcon from "@mui/icons-material/Email";
+
+
+const iconsMap: Record<string, React.ReactNode> = {
+  LinkedInIcon: <LinkedInIcon />,
+  WhatsAppIcon: <WhatsAppIcon />,
+  EmailIcon: <EmailIcon />,
+};
 
 const drawerWidth = 240;
 
@@ -31,12 +43,29 @@ export default function Menu({ children }: { children: React.ReactNode }) {
   };
 
   const drawer = (
-    <div>
-      <Box component="footer" id='contato'>
+    <header>
+      <Box component="section">
         <Container maxWidth="lg" >
-          <p>{Contato.foto}</p>
-          <h1>{Contato.nome}</h1>
-
+          <Stack direction="column" alignItems="center" sx={{ py: '1rem', textAlign: 'center' }} spacing={2}>
+            <Avatar alt={Contato.nome} src={Contato.foto}  sx={{ width: 200, height: 200 }}/>
+            <h2>{Contato.nome}</h2>
+            <Box>
+              <Stack spacing={2} direction="row">
+                {Contato.social.map((item, index) => (
+                  <Button
+                    key={index}
+                    href={item.url}
+                    target="_blank"
+                    title={item.name}
+                    rel="nofollow noreferrer noopener"
+                    variant="text"
+                  >
+                    {iconsMap[item.icon]}
+                  </Button>
+                ))}
+              </Stack>
+            </Box>
+          </Stack>
         </Container>
       </Box>
       <List>
@@ -49,7 +78,7 @@ export default function Menu({ children }: { children: React.ReactNode }) {
         ))}
 
       </List>
-    </div>
+    </header>
   );
 
   return (
@@ -57,7 +86,7 @@ export default function Menu({ children }: { children: React.ReactNode }) {
       <AppBar
         position="fixed"
         sx={{
-          display: { xs: "block", sm: "none" }, // <-- esconde no desktop
+          display: { xs: "block", sm: "none" },
         }}
       >
         <Toolbar>
@@ -106,7 +135,7 @@ export default function Menu({ children }: { children: React.ReactNode }) {
         </Drawer>
       </Box>
       <Box
-        component="main"
+        component="section"
         sx={{
           flexGrow: 1,
           width: { sm: `calc(100% - ${drawerWidth}px)` },

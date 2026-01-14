@@ -16,9 +16,11 @@ type educacao = {
 type projetos = {
   type: "projetos";
   img: string;
+  logo: string;
   title: string;
   link: string;
   empresa: string;
+  perfil?: string;
 };
 
 export type CardProps = trabalho | educacao | projetos;

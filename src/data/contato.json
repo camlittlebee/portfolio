@@ -1,20 +1,20 @@
 {
-  "foto": "camilly",
+  "foto": "../src/assets/profile.webp",
   "nome": "Camilly Ferreira Gudinho da Silva",
   "cargo": "Redatora",
   "social": [
     {
-      "icon": "fab fa-linkedin",
+      "icon": "LinkedInIcon",
       "name": "LinkedIn",
       "url": "https://www.linkedin.com/in/camilly-ferreira-98a80b170/"
     },
     {
-      "icon": "fab fa-whatsapp",
+      "icon": "WhatsAppIcon",
       "name": "WhatsApp",
       "url": "https://api.whatsapp.com/send/?phone=5511995038082&text=&type=phone_number&app_absent=0"
     },
     {
-      "icon": "fa-solid fa-envelope",
+      "icon": "EmailIcon",
       "name": "E-mail",
       "url": "mailto:camillysilva2003@usp.br"
     }
