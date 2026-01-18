@@ -26,13 +26,17 @@ const Card = (props: CardProps) => {
     case 'trabalho':
       return (
         <div className="card__trabalho">
-          <p>{props.img}</p>
-          <hr />
-          <h2>{props.empresa}</h2>
-          <p>{props.cargo}</p>
-          <p>{props.funcoes}</p>
-          <p>{format(props.dataInicio)}</p>
-          <p>{format(props.dataFim)}</p>
+          <img className="card-logo" src={`./src/assets/logos/${props.img}.webp`} alt={`Logo ${props.empresa}`} title={`Logo ${props.empresa}`} width='145' height='145' />
+          <div className="card-body">
+            <h2 className="card-title">{props.empresa}</h2>
+            <p className="card-subtitle">{props.cargo}</p>
+            <p className="card-text">{props.funcoes}</p>
+            <div className="card-time">
+              <time>{format(props.dataInicio)}</time>
+              -
+              <time>{format(props.dataFim)}</time>
+            </div>
+          </div>
         </div>
       );
     case 'educacao':

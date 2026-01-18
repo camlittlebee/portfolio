@@ -16,7 +16,7 @@
       "img": "tpc",
       "empresa": "TPC Logística Inteligente",
       "cargo": "Aprendiz",
-      "funcoes": "",
+      "funcoes": "Coleta e organização de dados via planilha, emissão de notas, alimentação de sistema logístico próprio, elaboração de apresentações em PowerPoint.",
       "dataInicio": "2021-06-01",
       "dataFim": "2022-07-01"
     },
@@ -24,32 +24,17 @@
       "img": "morgan",
       "empresa": "Instituto Morgan",
       "cargo": "Assistente Administrativo",
-      "funcoes": "",
+      "funcoes": "Elaboração de documentação de prestação de contas, redação de documentos, correção ortográfica de relatórios, controle de dados via planilhas.",
       "dataInicio": "2022-07-01",
       "dataFim": "2022-11-01"
     },
     {
       "img": "usp",
-      "empresa": "USP",
+      "empresa": "Programa de Pós-Graduação em Antropologia - USP",
       "cargo": "Estagiária",
-      "funcoes": "",
+      "funcoes": "Atualização da produção intelectual de docentes e discentes no sistema Sucupira, administração de redes sociais, coleta e tratamento de dados, elaboração de relatórios visuais.",
       "dataInicio": "2022-12-01",
       "dataFim": "2025-03-01"
-    },
-    {
-      "img": "mills",
-      "empresa": "Mills",
-      "cargo": "Assistente Comercial",
-      "funcoes": "",
-      "dataInicio": "2025-05-01",
-      "dataFim": "2025-09-01"
-    },
-    {
-      "img": "gruposc",
-      "empresa": "GrupoSC Distribuidora de Medicamentos",
-      "cargo": "Assistente administrativo",
-      "funcoes": "",
-      "dataInicio": "2025-11-01"
     }
   ]
 }

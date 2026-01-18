@@ -7,7 +7,7 @@ import './index.css';
 import 'normalize.css';
 import Curriculo from './data/curriculo.json';
 import Projetos from './data/projetos.json';
-import { Box, Container, Grid } from '@mui/material';
+import { Box, Container, Grid, Stack } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -33,14 +33,14 @@ createRoot(document.getElementById('root')!).render(
     <ThemeProvider theme={theme}>
       <Menu>
         <main>
-          <Box component="section">
+          <Box component="section" sx={{ py: 5 }}>
             <Container maxWidth="lg">
               <h1>Meu nome é Camilly Ferreira,</h1>
               <p>Sou formada em Letras pela Universidade de São Paulo (USP), com enfoque em redação, produção editorial e revisão de textos. Ao longo da minha formação, venho aprimorando minhas habilidades em diversos projetos acadêmicos e atividades extracurriculares. Além disso, tenho experiência voluntária em redação para internet e como designer e redatora voluntária para ONG, o que me permitiu desenvolver uma escrita versátil e focada em diferentes públicos e propósitos.</p>
             </Container>
           </Box>
 
-          <Box component="section">
+          <Box component="section" sx={{ py: 5, background: 'var(--light)' }}>
             <Container maxWidth="lg" >
               <h2>Projetos</h2>
               <p>Estes são os projetos que desenvolvi tanto no âmbito voluntário quanto acadêmico. Em cada um deles, atuei diretamente na elaboração dos textos e, no caso das peças gráficas, fui responsável tanto pela criação do design quanto pelo conteúdo textual.</p>
@@ -63,12 +63,14 @@ createRoot(document.getElementById('root')!).render(
             </Container>
           </Box>
 
-          <Box component="section" id="experiencias">
+          <Box component="section" sx={{ py: 5 }} id="experiencias">
             <Container maxWidth="lg" >
               <h2>Trabalho</h2>
-              <Grid container spacing={2}>
-                {Curriculo.trabalho.map((item, index) => (
-                  <Grid key={index} size={{ sm: 12, md: 5, lg: 4 }}>
+              <Box sx={{
+                width: {xs: '100%', md: '95%',}, mx: 'auto'
+              }}>
+                <Stack spacing={2}>
+                  {Curriculo.trabalho.map((item, index) => (
                     <Card
                       key={index}
                       type="trabalho"
@@ -79,13 +81,13 @@ createRoot(document.getElementById('root')!).render(
                       dataInicio={new Date(item.dataInicio)}
                       dataFim={item.dataFim ? new Date(item.dataFim) : undefined}
                     />
-                  </Grid>
-                ))}
-              </Grid>
+                  ))}
+                </Stack>
+              </Box>
             </Container>
           </Box>
 
-          <Box component="section" id="academica">
+          <Box component="section" sx={{ py: 5, background: 'var(--light)' }} id="academica">
             <Container maxWidth="lg" >
               <h2>Escola</h2>
               <Grid container spacing={2}>
