@@ -3,12 +3,16 @@
     {
       "img": "cps",
       "nome": "Etec Raposo",
-      "curso": "Técnico de Informática Integrado ao Ensino Médio"
+      "curso": "Técnico de Informática Integrado ao Ensino Médio",
+      "dataInicio": "2018",
+      "dataFim": "2020"
     },
     {
       "img": "usp",
       "nome": "USP",
-      "curso": "Bacharel em Letras - Português"
+      "curso": "Bacharel em Letras - Português",
+      "dataInicio": "2021",
+      "dataFim": "2025"
     }
   ],
   "trabalho": [

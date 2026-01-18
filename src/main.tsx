@@ -66,9 +66,7 @@ createRoot(document.getElementById('root')!).render(
           <Box component="section" sx={{ py: 5 }} id="experiencias">
             <Container maxWidth="lg" >
               <h2>Trabalho</h2>
-              <Box sx={{
-                width: {xs: '100%', md: '95%',}, mx: 'auto'
-              }}>
+              <Box sx={{width: { xs: '100%', md: '95%', }, mx: 'auto'}}>
                 <Stack spacing={2}>
                   {Curriculo.trabalho.map((item, index) => (
                     <Card
@@ -90,19 +88,21 @@ createRoot(document.getElementById('root')!).render(
           <Box component="section" sx={{ py: 5, background: 'var(--light)' }} id="academica">
             <Container maxWidth="lg" >
               <h2>Escola</h2>
-              <Grid container spacing={2}>
-                {Curriculo.educacao.map((item, index) => (
-                  <Grid key={index} size={{ sm: 12, md: 6, lg: 4 }}>
+              <Box sx={{ width: { xs: '100%', md: '95%', }, mx: 'auto' }}>
+                <Stack spacing={2}>
+                  {Curriculo.educacao.map((item, index) => (
                     <Card
                       key={index}
                       type="educacao"
                       title={item.nome}
                       img={item.img}
                       curso={item.curso}
+                      dataInicio={new Date(item.dataInicio)}
+                      dataFim={item.dataFim ? new Date(item.dataFim) : undefined}
                     />
-                  </Grid>
-                ))}
-              </Grid>
+                  ))}
+                </Stack>
+              </Box>
             </Container>
           </Box>
         </main>

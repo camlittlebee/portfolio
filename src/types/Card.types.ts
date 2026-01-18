@@ -12,6 +12,8 @@ type educacao = {
   title: string;
   img: string;
   curso: string;
+  dataInicio: Date;
+  dataFim?: Date;
 };
 type projetos = {
   type: "projetos";
