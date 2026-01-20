@@ -15,6 +15,14 @@ type educacao = {
   dataInicio: Date;
   dataFim?: Date;
 };
+type cursos = {
+  type: "cursos";
+  nome: string;
+  img: string;
+  instituicao: string;
+  ano: string;
+  skills: string[];
+};
 type projetos = {
   type: "projetos";
   img: string;
@@ -25,4 +33,4 @@ type projetos = {
   perfil?: string;
 };
 
-export type CardProps = trabalho | educacao | projetos;
+export type CardProps = trabalho | educacao | cursos | projetos;

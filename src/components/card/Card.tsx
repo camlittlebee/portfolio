@@ -42,7 +42,7 @@ const Card = (props: CardProps) => {
     case 'educacao':
       return (
         <div className="card__educacao">
-     <img className="card-logo" src={`./src/assets/logos/${props.img}.webp`} alt={`Logo ${props.title}`} title={`Logo ${props.title}`} width='145' height='145' />
+          <img className="card-logo" src={`./src/assets/logos/${props.img}.webp`} alt={`Logo ${props.title}`} title={`Logo ${props.title}`} width='145' height='145' />
           <div className="card-body">
             <h2 className="card-title">{props.title}</h2>
             <p className="card-text">{props.curso}</p>
@@ -51,6 +51,23 @@ const Card = (props: CardProps) => {
               -
               <time>{format(props.dataFim)}</time>
             </div>
+          </div>
+        </div>
+      );
+    case 'cursos':
+      return (
+        <div className="card__cursos">
+          <img className="card-logo" src={`./src/assets/logos/${props.img}.webp`} alt={`Logo ${props.instituicao}`} title={`Logo ${props.instituicao}`} width='145' height='145' />
+          <div className="card-body">
+            <h2 className="card-title">{props.nome} <span className="card-subtitle">{props.instituicao}</span></h2>
+            {props.skills && (
+              <div className="card-skills">
+                {props.skills.map((skill: string, index: number) => (
+                  <p className="card-text" key={index}>{skill}</p>
+                ))}
+              </div>
+            )}
+            <time>{props.ano}</time>
           </div>
         </div>
       );

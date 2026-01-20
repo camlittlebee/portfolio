@@ -46,7 +46,7 @@ createRoot(document.getElementById('root')!).render(
               <p>Estes são os projetos que desenvolvi tanto no âmbito voluntário quanto acadêmico. Em cada um deles, atuei diretamente na elaboração dos textos e, no caso das peças gráficas, fui responsável tanto pela criação do design quanto pelo conteúdo textual.</p>
               <Grid container spacing={2}>
                 {Projetos.projetos.map((item, index) => (
-                  <Grid key={index} size={{ sm: 12, md: 5, lg: 4 }}>
+                  <Grid key={index} size={{ xs: 12, md: 6, lg: 4 }}>
                     <Card
                       key={index}
                       type="projetos"
@@ -66,7 +66,7 @@ createRoot(document.getElementById('root')!).render(
           <Box component="section" sx={{ py: 5 }} id="experiencias">
             <Container maxWidth="lg" >
               <h2>Trabalho</h2>
-              <Box sx={{width: { xs: '100%', md: '95%', }, mx: 'auto'}}>
+              <Box sx={{ width: { xs: '100%', md: '95%', }, mx: 'auto' }}>
                 <Stack spacing={2}>
                   {Curriculo.trabalho.map((item, index) => (
                     <Card
@@ -99,6 +99,26 @@ createRoot(document.getElementById('root')!).render(
                       curso={item.curso}
                       dataInicio={new Date(item.dataInicio)}
                       dataFim={item.dataFim ? new Date(item.dataFim) : undefined}
+                    />
+                  ))}
+                </Stack>
+              </Box>
+            </Container>
+          </Box>
+          <Box component="section" sx={{ py: 5 }} id="cursos">
+            <Container maxWidth="lg" >
+              <h2>Escola</h2>
+              <Box sx={{ width: { xs: '100%', md: '95%', }, mx: 'auto' }}>
+                <Stack spacing={2}>
+                  {Curriculo.cursos.map((item, index) => (
+                    <Card
+                      key={index}
+                      type="cursos"
+                      nome={item.nome}
+                      img={item.img}
+                      instituicao={item.instituicao}
+                      ano={item.ano}
+                      skills = {item.skills}
                     />
                   ))}
                 </Stack>

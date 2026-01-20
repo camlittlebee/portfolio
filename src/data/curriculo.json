@@ -15,6 +15,50 @@
       "dataFim": "2025"
     }
   ],
+  "cursos": [
+    {
+      "img": "instituto-eldorado",
+      "nome": "UX Writing",
+      "instituicao": "Instituto Eldorado",
+      "ano": "2025",
+      "skills": ["Escrita clara e funcional para interfaces digitais" ,"Organização da informação e foco na experiência do usuário"]
+    },
+    {
+      "img": "univ-of-colorado-boulder",
+      "nome": "Introdução à Publicidade Digital",
+      "instituicao": "Univ. of Colorado Boulder",
+      "ano": "2025",
+      "skills": ["Criação de mensagens persuasivas para campanhas online", "Noções de segmentação e objetivos de mídia digital"]
+    },
+    {
+      "img": "fiap",
+      "nome": "Marketing em Plataformas de Social Media",
+      "instituicao": "FIAP",
+      "ano": "2024",
+      "skills": ["Produção de conteúdo para redes sociais", "Adequação de linguagem por plataforma e foco em engajamento"]
+    },
+    {
+      "img": "mirago",
+      "nome": "Introdução à SEO e WordPress",
+      "instituicao": "Mirago",
+      "ano": "2024",
+      "skills": ["Produção de conteúdo otimizado para SEO", "Publicação e organização de conteúdo em WordPress"]
+    },
+    {
+      "img": "rd-university",
+      "nome": "Inbound Marketing",
+      "instituicao": "RD University",
+      "ano": "2023",
+      "skills": ["Criação de conteúdo estratégico para atração de leads", "Escrita alinhada à jornada do cliente"]
+    },
+    {
+      "img": "vagas-revisao",
+      "nome": "Revisão Editorial",
+      "instituicao": "Vagas de Revisão",
+      "ano": "2023",
+      "skills": ["Revisão gramatical e de estilo", "Padronização e clareza textual"]
+    }
+  ],
   "trabalho": [
     {
       "img": "tpc",
