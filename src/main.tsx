@@ -105,6 +105,7 @@ createRoot(document.getElementById('root')!).render(
               </Box>
             </Container>
           </Box>
+          
           <Box component="section" sx={{ py: 5 }} id="cursos">
             <Container maxWidth="lg" >
               <h2>Escola</h2>
@@ -118,7 +119,7 @@ createRoot(document.getElementById('root')!).render(
                       img={item.img}
                       instituicao={item.instituicao}
                       ano={item.ano}
-                      skills = {item.skills}
+                      skills={item.skills}
                     />
                   ))}
                 </Stack>
