@@ -7,7 +7,7 @@ import Stack from '@mui/material/Stack';
 function Footer() {
 
   return (
-    <Box component="footer" id='contato' sx={{ py: 5 }}>
+    <Box component="footer" id='footer' sx={{ py: 5 }}>
       <Container maxWidth="lg" >
         <Stack direction="row" spacing={2} justifyContent={'center'} alignItems={'center'}>
           <Button href='/cv-camilly.pdf'target="_blank" rel="noopener" variant='outlined' endIcon={<ArrowDownwardIcon />}>Baixar Currículo</Button>

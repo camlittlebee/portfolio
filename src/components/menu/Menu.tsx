@@ -48,7 +48,7 @@ export default function Menu({ children }: { children: React.ReactNode }) {
         <Container maxWidth="lg" >
           <Stack direction="column" alignItems="center" sx={{ py: '1rem', textAlign: 'center' }} spacing={2}>
             <Avatar alt={Contato.nome} src={Contato.foto}  sx={{ width: 200, height: 200 }}/>
-            <h2>{Contato.nome}</h2>
+            <h2 className="title-nome">{Contato.nome}</h2>
             <Box>
               <Stack spacing={2} direction="row">
                 {Contato.social.map((item, index) => (
@@ -141,7 +141,6 @@ export default function Menu({ children }: { children: React.ReactNode }) {
           width: { sm: `calc(100% - ${drawerWidth}px)` },
         }}
       >
-        <Toolbar />
         {children}
       </Box>
     </Box>

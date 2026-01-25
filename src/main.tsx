@@ -33,14 +33,14 @@ createRoot(document.getElementById('root')!).render(
     <ThemeProvider theme={theme}>
       <Menu>
         <main>
-          <Box component="section" sx={{ py: 5 }}>
+          <Box component="section" sx={{ py: 5 }} id="home">
             <Container maxWidth="lg">
               <h1>Meu nome é Camilly Ferreira,</h1>
               <p>Sou formada em Letras pela Universidade de São Paulo (USP), com enfoque em redação, produção editorial e revisão de textos. Ao longo da minha formação, venho aprimorando minhas habilidades em diversos projetos acadêmicos e atividades extracurriculares. Além disso, tenho experiência voluntária em redação para internet e como designer e redatora voluntária para ONG, o que me permitiu desenvolver uma escrita versátil e focada em diferentes públicos e propósitos.</p>
             </Container>
           </Box>
 
-          <Box component="section" sx={{ py: 5, background: 'var(--light)' }}>
+          <Box component="section" sx={{ py: 5, background: 'var(--light)' }} id="projetos">
             <Container maxWidth="lg" >
               <h2>Projetos</h2>
               <p>Estes são os projetos que desenvolvi tanto no âmbito voluntário quanto acadêmico. Em cada um deles, atuei diretamente na elaboração dos textos e, no caso das peças gráficas, fui responsável tanto pela criação do design quanto pelo conteúdo textual.</p>
@@ -65,7 +65,7 @@ createRoot(document.getElementById('root')!).render(
 
           <Box component="section" sx={{ py: 5 }} id="experiencias">
             <Container maxWidth="lg" >
-              <h2>Trabalho</h2>
+              <h2>Minha Trajetória Profissional</h2>
               <Box sx={{ width: { xs: '100%', md: '95%', }, mx: 'auto' }}>
                 <Stack spacing={2}>
                   {Curriculo.trabalho.map((item, index) => (
@@ -87,7 +87,7 @@ createRoot(document.getElementById('root')!).render(
 
           <Box component="section" sx={{ py: 5, background: 'var(--light)' }} id="academica">
             <Container maxWidth="lg" >
-              <h2>Escola</h2>
+              <h2>Minha jordana acadêmica</h2>
               <Box sx={{ width: { xs: '100%', md: '95%', }, mx: 'auto' }}>
                 <Stack spacing={2}>
                   {Curriculo.educacao.map((item, index) => (
@@ -108,7 +108,7 @@ createRoot(document.getElementById('root')!).render(
           
           <Box component="section" sx={{ py: 5 }} id="cursos">
             <Container maxWidth="lg" >
-              <h2>Escola</h2>
+              <h2>Cursos Relizados</h2>
               <Box sx={{ width: { xs: '100%', md: '95%', }, mx: 'auto' }}>
                 <Stack spacing={2}>
                   {Curriculo.cursos.map((item, index) => (
