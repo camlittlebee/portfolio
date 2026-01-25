@@ -87,7 +87,7 @@ createRoot(document.getElementById('root')!).render(
 
           <Box component="section" sx={{ py: 5, background: 'var(--light)' }} id="academica">
             <Container maxWidth="lg" >
-              <h2>Minha jordana acadêmica</h2>
+              <h2>Minha jornada acadêmica</h2>
               <Box sx={{ width: { xs: '100%', md: '95%', }, mx: 'auto' }}>
                 <Stack spacing={2}>
                   {Curriculo.educacao.map((item, index) => (

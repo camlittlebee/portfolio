@@ -13,6 +13,12 @@
       "curso": "Bacharel em Letras - Português",
       "dataInicio": "2021",
       "dataFim": "2025"
+    },
+    {
+      "img": "usp",
+      "nome": "USP",
+      "curso": "Bacharel em Editoração",
+      "dataInicio": "2026"
     }
   ],
   "cursos": [

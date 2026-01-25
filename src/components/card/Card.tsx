@@ -1,6 +1,7 @@
 import type { CardProps } from "../../types/Card.types";
-const format = (d?: Date) =>
-  d ? d.toLocaleDateString("pt-BR") : "Atualmente";
+const format = (d?: Date) => d ? d.toLocaleDateString("pt-BR") : "Atualmente";
+const formatYear = (d?: Date) => d ? d.getFullYear() : "Atualmente";
+
 
 const Card = (props: CardProps) => {
   switch (props.type) {
@@ -47,9 +48,9 @@ const Card = (props: CardProps) => {
             <h2 className="card-title">{props.title}</h2>
             <p className="card-text">{props.curso}</p>
             <div className="card-time">
-              <time>{format(props.dataInicio)}</time>
+              <time>{formatYear(props.dataInicio)}</time>
               -
-              <time>{format(props.dataFim)}</time>
+              <time>{formatYear(props.dataFim)}</time>
             </div>
           </div>
         </div>
