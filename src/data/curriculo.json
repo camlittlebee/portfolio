@@ -1,0 +1,94 @@
+{
+  "educacao": [
+    {
+      "img": "cps",
+      "nome": "Etec Raposo",
+      "curso": "Técnico de Informática Integrado ao Ensino Médio",
+      "dataInicio": "2018",
+      "dataFim": "2020"
+    },
+    {
+      "img": "usp",
+      "nome": "USP",
+      "curso": "Bacharel em Letras - Português",
+      "dataInicio": "2021",
+      "dataFim": "2025"
+    },
+    {
+      "img": "usp",
+      "nome": "USP",
+      "curso": "Bacharel em Editoração",
+      "dataInicio": "2026"
+    }
+  ],
+  "cursos": [
+    {
+      "img": "instituto-eldorado",
+      "nome": "UX Writing",
+      "instituicao": "Instituto Eldorado",
+      "ano": "2025",
+      "skills": ["Escrita clara e funcional para interfaces digitais" ,"Organização da informação e foco na experiência do usuário"]
+    },
+    {
+      "img": "univ-of-colorado-boulder",
+      "nome": "Introdução à Publicidade Digital",
+      "instituicao": "Univ. of Colorado Boulder",
+      "ano": "2025",
+      "skills": ["Criação de mensagens persuasivas para campanhas online", "Noções de segmentação e objetivos de mídia digital"]
+    },
+    {
+      "img": "fiap",
+      "nome": "Marketing em Plataformas de Social Media",
+      "instituicao": "FIAP",
+      "ano": "2024",
+      "skills": ["Produção de conteúdo para redes sociais", "Adequação de linguagem por plataforma e foco em engajamento"]
+    },
+    {
+      "img": "mirago",
+      "nome": "Introdução à SEO e WordPress",
+      "instituicao": "Mirago",
+      "ano": "2024",
+      "skills": ["Produção de conteúdo otimizado para SEO", "Publicação e organização de conteúdo em WordPress"]
+    },
+    {
+      "img": "rd-university",
+      "nome": "Inbound Marketing",
+      "instituicao": "RD University",
+      "ano": "2023",
+      "skills": ["Criação de conteúdo estratégico para atração de leads", "Escrita alinhada à jornada do cliente"]
+    },
+    {
+      "img": "vagas-revisao",
+      "nome": "Revisão Editorial",
+      "instituicao": "Vagas de Revisão",
+      "ano": "2023",
+      "skills": ["Revisão gramatical e de estilo", "Padronização e clareza textual"]
+    }
+  ],
+  "trabalho": [
+    {
+      "img": "tpc",
+      "empresa": "TPC Logística Inteligente",
+      "cargo": "Aprendiz",
+      "funcoes": "Coleta e organização de dados via planilha, emissão de notas, alimentação de sistema logístico próprio, elaboração de apresentações em PowerPoint.",
+      "dataInicio": "2021-06-01",
+      "dataFim": "2022-07-01"
+    },
+    {
+      "img": "morgan",
+      "empresa": "Instituto Morgan",
+      "cargo": "Assistente Administrativo",
+      "funcoes": "Elaboração de documentação de prestação de contas, redação de documentos, correção ortográfica de relatórios, controle de dados via planilhas.",
+      "dataInicio": "2022-07-01",
+      "dataFim": "2022-11-01"
+    },
+    {
+      "img": "usp",
+      "empresa": "Programa de Pós-Graduação em Antropologia - USP",
+      "cargo": "Estagiária",
+      "funcoes": "Atualização da produção intelectual de docentes e discentes no sistema Sucupira, administração de redes sociais, coleta e tratamento de dados, elaboração de relatórios visuais.",
+      "dataInicio": "2022-12-01",
+      "dataFim": "2025-03-01"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "home",
+    "label": "Home"
+  },
+  {
+    "id": "projetos",
+    "label": "Projetos"
+  },
+  {
+    "id": "experiencias",
+    "label": "Experiências"
+  },
+  {
+    "id": "academica",
+    "label": "Acadêmica"
+  },
+  {
+    "id": "cursos",
+    "label": "Cursos"
+  },
+  {
+    "id": "footer",
+    "label": "Currículo"
+  }
+  
+]
