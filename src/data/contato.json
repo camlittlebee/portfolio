@@ -1,5 +1,5 @@
 {
-  "foto": "portfolio/profile.webp",
+  "foto": "./profile.webp",
   "nome": "Camilly Ferreira Gudinho da Silva",
   "cargo": "Redatora",
   "social": [

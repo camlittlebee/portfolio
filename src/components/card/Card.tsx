@@ -9,11 +9,11 @@ const Card = (props: CardProps) => {
       return (
         <a className="card__projetos" href={`${props.link}`} target="_blank" rel="noopener noreferrer" title="Ler Artigo">
           <div className="card-header">
-            <img className="card-logo" src={`portfolio/logos/${props.logo}.webp`} alt={`Logo ${props.empresa}`} title={`Logo ${props.empresa}`} width='50' height='50' />
+            <img className="card-logo" src={`./logos/${props.logo}.webp`} alt={`Logo ${props.empresa}`} title={`Logo ${props.empresa}`} width='50' height='50' />
             <p className="card-tag">{props.empresa}</p>
           </div>
           <div className="card-cover">
-            <img src={`portfolio/cover/${props.img}.webp`} alt={`Cover ${props.title}`} title={`Cover ${props.title}`} />
+            <img src={`./cover/${props.img}.webp`} alt={`Cover ${props.title}`} title={`Cover ${props.title}`} />
           </div>
           <h2 className="card-title">{props.title}</h2>
 
@@ -27,7 +27,7 @@ const Card = (props: CardProps) => {
     case 'trabalho':
       return (
         <div className="card__trabalho">
-          <img className="card-logo" src={`portfolio/logos/${props.img}.webp`} alt={`Logo ${props.empresa}`} title={`Logo ${props.empresa}`} width='145' height='145' />
+          <img className="card-logo" src={`./logos/${props.img}.webp`} alt={`Logo ${props.empresa}`} title={`Logo ${props.empresa}`} width='145' height='145' />
           <div className="card-body">
             <h2 className="card-title">{props.empresa}</h2>
             <p className="card-subtitle">{props.cargo}</p>
@@ -43,7 +43,7 @@ const Card = (props: CardProps) => {
     case 'educacao':
       return (
         <div className="card__educacao">
-          <img className="card-logo" src={`portfolio/logos/${props.img}.webp`} alt={`Logo ${props.title}`} title={`Logo ${props.title}`} width='145' height='145' />
+          <img className="card-logo" src={`./logos/${props.img}.webp`} alt={`Logo ${props.title}`} title={`Logo ${props.title}`} width='145' height='145' />
           <div className="card-body">
             <h2 className="card-title">{props.title}</h2>
             <p className="card-text">{props.curso}</p>
@@ -58,7 +58,7 @@ const Card = (props: CardProps) => {
     case 'cursos':
       return (
         <div className="card__cursos">
-          <img className="card-logo" src={`portfolio/logos/${props.img}.webp`} alt={`Logo ${props.instituicao}`} title={`Logo ${props.instituicao}`} width='145' height='145' />
+          <img className="card-logo" src={`./logos/${props.img}.webp`} alt={`Logo ${props.instituicao}`} title={`Logo ${props.instituicao}`} width='145' height='145' />
           <div className="card-body">
             <h2 className="card-title">{props.nome} <span className="card-subtitle">{props.instituicao}</span></h2>
             {props.skills && (
