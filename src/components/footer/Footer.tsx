@@ -10,7 +10,7 @@ function Footer() {
     <Box component="footer" id='footer' sx={{ py: 5 }}>
       <Container maxWidth="lg" >
         <Stack direction="row" spacing={2} justifyContent={'center'} alignItems={'center'}>
-          <Button href='/cv-camilly.pdf'target="_blank" rel="noopener" variant='outlined' endIcon={<ArrowDownwardIcon />}>Baixar Currículo</Button>
+          <Button href='portfolio/cv-camilly.pdf'target="_blank" rel="noopener" variant='outlined' endIcon={<ArrowDownwardIcon />}>Baixar Currículo</Button>
         </Stack>
       </Container>
     </Box>
