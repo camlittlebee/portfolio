@@ -36,7 +36,7 @@ createRoot(document.getElementById('root')!).render(
           <Box component="section" sx={{ py: 5 }} id="home">
             <Container maxWidth="lg">
               <h1>Meu nome é Camilly Ferreira,</h1>
-              <p>Sou formada em Letras pela Universidade de São Paulo (USP), com enfoque em redação, produção editorial e revisão de textos. Ao longo da minha formação, venho aprimorando minhas habilidades em diversos projetos acadêmicos e atividades extracurriculares. Além disso, tenho experiência voluntária em redação para internet e como designer e redatora voluntária para ONG, o que me permitiu desenvolver uma escrita versátil e focada em diferentes públicos e propósitos.</p>
+              <p>Sou estudante de Editoração e formada em Letras pela Universidade de São Paulo (USP), com enfoque em redação, produção editorial e revisão de textos. Ao longo da minha formação, venho aprimorando minhas habilidades em diversos projetos acadêmicos e atividades extracurriculares. Além disso, tenho experiência voluntária em redação para internet e como designer e redatora voluntária para ONG, o que me permitiu desenvolver uma escrita versátil e focada em diferentes públicos e propósitos.</p>
             </Container>
           </Box>
 
